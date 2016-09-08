@@ -9,7 +9,7 @@ var chai = require( 'chai' );
 var chaiAsPromised = require( 'chai-as-promised' );
 var expect = chai.expect;
 var fs = require( 'fs' );
-var mkdir = require( '../' );
+var mkdir = require( '../src' );
 
 /**
  * module variables
@@ -21,7 +21,7 @@ var dirname = 'test-temp';
  */
 chai.use( chaiAsPromised );
 
-describe( 'mkdir( path[, mode] )', function () {
+describe( 'mkdir( path[, mode][, ignore] )', function () {
   describe( 'should return', function () {
     beforeEach(
       function () {
