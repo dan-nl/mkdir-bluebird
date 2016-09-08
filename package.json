@@ -1,7 +1,7 @@
 {
   "name": "mkdir-bluebird",
   "version": "1.0.0",
-  "description": "wraps node’s `fs.mkdir()`, in a bluebird (3.4.6) promise that resolves with `true` if successful or rejects with the `Error` returned by `fs.mkdir()`; both results need to be handled by the code calling this module",
+  "description": "promise wrapper for node’s fs.mkdir()",
   "author": "dan entous",
   "license": "MIT",
   "main": "src",
