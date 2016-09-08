@@ -1,6 +1,6 @@
 {
   "name": "mkdir-bluebird",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "promise wrapper for node’s fs.mkdir()",
   "author": "dan entous",
   "license": "MIT",
