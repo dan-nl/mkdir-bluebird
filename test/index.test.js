@@ -23,7 +23,7 @@ chai.use( chaiAsPromised );
 
 describe( 'mkdir( path[, mode][, ignore] )', function () {
   describe( 'should return', function () {
-    beforeEach(
+    after(
       function () {
         fs.rmdir( dirname );
       }
@@ -35,7 +35,7 @@ describe( 'mkdir( path[, mode][, ignore] )', function () {
   } );
 
   describe( 'should resolve', function () {
-    beforeEach(
+    after(
       function () {
         fs.rmdir( dirname );
       }
@@ -61,6 +61,10 @@ describe( 'mkdir( path[, mode][, ignore] )', function () {
 
     it( 'an `Error` when `ignore` is set to `false` and the directory already exists', function () {
       return expect( mkdir( 'node_modules', null, false ) ).to.be.rejectedWith( Error, 'EEXIST' );
+    } );
+
+    it( 'an `Error` when the root level of the directory path doesn’t exist yet', function () {
+      return expect( mkdir( 'unknown-root/sub-directory' ) ).to.be.rejectedWith( Error, 'ENOENT' );
     } );
   } );
 } );
