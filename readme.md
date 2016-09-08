@@ -53,6 +53,26 @@ mkdir( 'test-dir', null, false )
   )
 ```
 
+### using node’s path module
+the path `__dirname/test` must exist in order to create the directory `test-dir` in it
+```javascript
+var mkdir = require( 'mkdir-bluebird' );
+var path = require( 'path' );
+var dirpath = path.join( __dirname, 'test', 'test-dir' );
+
+mkdir( dirpath )
+  .then(
+    function( result ) {
+      // handle success
+    }
+  )
+  .catch(
+    function( err ) {
+      // handle error
+    }
+  )
+```
+
 ## license
 [MIT License][3]
 
