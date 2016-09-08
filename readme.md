@@ -1,7 +1,7 @@
 # mkdir( path[, mode][, ignore] )
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
-wraps node’s [`fs.mkdir()`][1], in a [bluebird ( v3.4.6 )][2] promise that resolves with `true` if successful or rejects with the `Error` returned by `fs.mkdir()`; both results need to be handled by the code calling this module. 
+wraps node’s [`fs.mkdir()`][1], in a [bluebird ( v3.4.6 )][2] promise that resolves with `true` if successful or rejects with the `Error` returned by `fs.mkdir()`; both results need to be handled by the code calling this function.
 
 ```javascript
 @param {String|Buffer} path
@@ -18,7 +18,7 @@ npm install mkdir-bluebird
 
 ## usage
 ### basic
-ignores `EEXIST` directory errors returned by `fs.mkdir()`; all other errors still reject the promise
+ignores `EEXIST` directory errors returned by `fs.mkdir()`
 ```javascript
 var mkdir = require( 'mkdir-bluebird' );
 
@@ -36,7 +36,7 @@ mkdir( 'test-dir' )
 ```
 
 ### set ignore to `false`
-acknowledges `EEXIST` directory errors returned by `fs.mkdir()` and rejects the promise if that error occurs
+acknowledges `EEXIST` directory errors returned by `fs.mkdir()`
 ```javascript
 var mkdir = require( 'mkdir-bluebird' );
 

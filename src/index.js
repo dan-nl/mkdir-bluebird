@@ -7,9 +7,11 @@ var fs = require( 'fs' );
 var Bluebird = require( 'bluebird' );
 
 /**
- * wraps node’s `fs.mkdir()`, in a bluebird ( v 3.4.6 ) promise that resolves with `true` if successful or rejects with the `Error` returned by `fs.mkdir()`; both results need to be handled by the code calling this module
+ * wraps node’s `fs.mkdir()`, in a bluebird ( v 3.4.6 ) promise that resolves with `true` if successful or rejects with
+ * the `Error` returned by `fs.mkdir()`; both results need to be handled by the code calling this module
  *
- * note: `fs.mkdir()` throws a `TypeError` if the params passed to it are not valid, and returns an `Error` to the callback if it cannot create the directory
+ * note: `fs.mkdir()` throws a `TypeError` if the params passed to it are not valid, and returns an `Error` to the
+ * callback if it cannot create the directory
  *
  * @param {String|Buffer} path
  * @param {Number} [mode = 0o777]
