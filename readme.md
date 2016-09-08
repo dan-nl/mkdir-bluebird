@@ -1,5 +1,5 @@
 # mkdir-bluebird
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![NSP Status][nsp-image]][nsp-url]
 
 wraps node’s [`fs.mkdir()`][1], in a [bluebird ( v3.4.6 )][2] promise that resolves with `true` if successful or rejects with the `Error` returned by `fs.mkdir()`; both results need to be handled by the code calling this function.
 
@@ -85,3 +85,5 @@ mkdir( dirpath )
 [coveralls-url]: https://coveralls.io/github/dan-nl/mkdir-bluebird?branch=master
 [npm-image]: https://img.shields.io/npm/v/mkdir-bluebird.svg
 [npm-url]: https://www.npmjs.com/package/mkdir-bluebird
+[nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/2d73966e-ed83-47a7-bf79-37c6aca36be0/badge
+[nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/2d73966e-ed83-47a7-bf79-37c6aca36be0
