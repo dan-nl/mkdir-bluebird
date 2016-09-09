@@ -11,8 +11,8 @@ var Promise = require( 'bluebird' );
  * successful or rejects with the `Error` returned by `fs.mkdir()`; both results need to be
  * handled by the code calling this module
  *
- * @param {String|Buffer} path
- * @param {Number} [mode = 0o777]
+ * @param {string|buffer} path
+ * @param {number} [mode = 0o777]
  * @param {boolean} [ignore = true] ignore `EEXIST` directory errors returned by `fs.mkdir()`
  *
  * @returns {Promise}
