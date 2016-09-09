@@ -1,10 +1,10 @@
-/* globals describe, beforeEach, it */
+/* globals describe, after, it */
 'use strict';
 
 /**
  * module dependencies
  */
-var bluebird = require( 'bluebird' );
+var Promise = require( 'bluebird' );
 var chai = require( 'chai' );
 var chaiAsPromised = require( 'chai-as-promised' );
 var expect = chai.expect;
@@ -30,7 +30,7 @@ describe( 'mkdir( path[, mode][, ignore] )', function () {
     );
 
     it( 'a bluebird promise', function () {
-      expect( mkdir( dirname ) ).to.be.instanceof( bluebird );
+      expect( mkdir( dirname ) ).to.be.instanceof( Promise );
     } );
   } );
 

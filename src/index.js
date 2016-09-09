@@ -4,7 +4,7 @@
  * module dependencies
  */
 var fs = require( 'fs' );
-var Bluebird = require( 'bluebird' );
+var Promise = require( 'bluebird' );
 
 /**
  * wraps node’s `fs.mkdir()`, in a bluebird ( v 3.4.6 ) promise that resolves with `true` if
@@ -15,14 +15,14 @@ var Bluebird = require( 'bluebird' );
  * @param {Number} [mode = 0o777]
  * @param {boolean} [ignore = true] ignore `EEXIST` directory errors returned by `fs.mkdir()`
  *
- * @returns {bluebird}
+ * @returns {Promise}
  */
 module.exports = function mkdir( path, mode, ignore ) {
   ignore = typeof ignore === 'boolean'
     ? ignore
     : true;
 
-  return new Bluebird(
+  return new Promise(
     /**
      * @param {Function} resolve
      * @param {Function} reject
