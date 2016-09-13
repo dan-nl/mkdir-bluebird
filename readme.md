@@ -1,7 +1,7 @@
 # mkdir-bluebird
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![NSP Status][nsp-image]][nsp-url]
 
-promise wrapper for node’s fs.mkdir() that ignoes `EEXIST` by default.
+promise wrapper for node’s fs.mkdir() that ignores `EEXIST` by default.
 
 wraps node’s [`fs.mkdir()`][fs-mkdir], in a [bluebird][bluebird] promise that resolves with `true` if successful or rejects with the `Error` returned by `fs.mkdir()`; both results need to be handled by the code calling this function.
 
