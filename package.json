@@ -1,7 +1,7 @@
 {
   "name": "mkdir-bluebird",
   "version": "1.0.9",
-  "description": "promise wrapper for node’s fs.mkdir()",
+  "description": "promise wrapper for node’s fs.mkdir() that ignoes EEXIST by default",
   "author": "dan entous",
   "license": "MIT",
   "main": "src",

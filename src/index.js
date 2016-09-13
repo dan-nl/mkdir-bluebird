@@ -7,8 +7,10 @@ var fs = require( 'fs' );
 var Promise = require( 'bluebird' );
 
 /**
- * wraps node’s `fs.mkdir()`, in a bluebird ( v 3.4.6 ) promise that resolves with `true` if
- * successful or rejects with the `Error` returned by `fs.mkdir()`; both results need to be
+ * promise wrapper for node’s fs.mkdir() that ignoes EEXIST by default
+ *
+ * wraps node’s fs.mkdir(), in a bluebird promise that resolves with `true` if
+ * successful or rejects with the `Error` returned by fs.mkdir(); both results need to be
  * handled by the code calling this module
  *
  * @param {string|buffer} path
