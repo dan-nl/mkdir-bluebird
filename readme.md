@@ -43,7 +43,7 @@ mkdir( 'test-dir' )
     function( err ) {
       // handle error
     }
-  )
+  );
 ```
 
 ### set ignore to `false`
@@ -61,7 +61,7 @@ mkdir( 'test-dir', null, false )
     function( err ) {
       // handle error
     }
-  )
+  );
 ```
 
 ### using node’s path module
@@ -81,7 +81,7 @@ mkdir( dirpath )
     function( err ) {
       // handle error
     }
-  )
+  );
 ```
 
 ## license
