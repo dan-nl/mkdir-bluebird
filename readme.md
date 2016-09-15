@@ -1,5 +1,5 @@
 # mkdir-bluebird
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![NSP Status][nsp-image]][nsp-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][david-dm-image]][david-dm-url] [![NSP Status][nsp-image]][nsp-url]
 
 promise wrapper for node’s fs.mkdir() that ignores `EEXIST` by default.
 
@@ -107,6 +107,8 @@ mkdir( dirpath )
 
 [coveralls-image]: https://coveralls.io/repos/github/dan-nl/mkdir-bluebird/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/dan-nl/mkdir-bluebird?branch=master
+[david-dm-image]: https://david-dm.org/dan-nl/mkdir-bluebird.svg
+[david-dm-url]: https://david-dm.org/dan-nl/mkdir-bluebird
 [bluebird]: https://www.npmjs.com/package/bluebird
 [fs-mkdir]: https://nodejs.org/api/fs.html#fs_fs_mkdir_path_mode_callback
 [mit-license]: https://raw.githubusercontent.com/dan-nl/mkdir-bluebird/master/license.txt
