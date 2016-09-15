@@ -35,11 +35,17 @@ var mkdir = require( 'mkdir-bluebird' );
 
 mkdir( 'test-dir' )
   .then(
+    /**
+     * @param {boolean} result
+     */
     function( result ) {
       // handle success
     }
   )
   .catch(
+    /**
+     * @param {Error} err
+     */
     function( err ) {
       // handle error
     }
@@ -53,11 +59,17 @@ var mkdir = require( 'mkdir-bluebird' );
 
 mkdir( 'test-dir', null, false )
   .then(
+    /**
+     * @param {boolean} result
+     */
     function( result ) {
       // handle success
     }
   )
   .catch(
+    /**
+     * @param {Error} err
+     */
     function( err ) {
       // handle error
     }
@@ -73,11 +85,17 @@ var dirpath = path.join( __dirname, 'test', 'test-dir' );
 
 mkdir( dirpath )
   .then(
+    /**
+     * @param {boolean} result
+     */
     function( result ) {
       // handle success
     }
   )
   .catch(
+    /**
+     * @param {Error} err
+     */
     function( err ) {
       // handle error
     }
