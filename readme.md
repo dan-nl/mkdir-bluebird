@@ -114,7 +114,7 @@ mkdir( dirpath )
 [mit-license]: https://raw.githubusercontent.com/dan-nl/mkdir-bluebird/master/license.txt
 [npm-image]: https://img.shields.io/npm/v/mkdir-bluebird.svg
 [npm-url]: https://www.npmjs.com/package/mkdir-bluebird
-[nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/2d73966e-ed83-47a7-bf79-37c6aca36be0/badge
-[nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/2d73966e-ed83-47a7-bf79-37c6aca36be0
+[nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/159c1d65-8122-4061-8a2b-deda0739ceab/badge
+[nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/159c1d65-8122-4061-8a2b-deda0739ceab
 [travis-image]: https://travis-ci.org/dan-nl/mkdir-bluebird.svg?branch=master
 [travis-url]: https://travis-ci.org/dan-nl/mkdir-bluebird
