@@ -17,7 +17,7 @@ var Promise = require( 'bluebird' );
  * @param {number} [mode = 0o777]
  * @param {boolean} [ignore = true] ignore `EEXIST` directory errors returned by `fs.mkdir()`
  *
- * @returns {Promise}
+ * @returns {Promise.<boolean, Error>}
  */
 module.exports = function mkdir( path, mode, ignore ) {
   ignore = typeof ignore === 'boolean'
@@ -28,6 +28,7 @@ module.exports = function mkdir( path, mode, ignore ) {
     /**
      * @param {Function} resolve
      * @param {Function} reject
+     * @returns {undefined}
      */
     function ( resolve, reject ) {
       fs.mkdir(
@@ -35,6 +36,7 @@ module.exports = function mkdir( path, mode, ignore ) {
         mode,
         /**
          * @param {Error} [err]
+         * @returns {undefined}
          */
         function callback( err ) {
           if ( err ) {
